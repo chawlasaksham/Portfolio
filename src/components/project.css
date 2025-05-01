@@ -1,0 +1,93 @@
+/* Full-height scroll snap container */
+.snap-container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background: linear-gradient(180deg, #e0e7ff, #1b10#0a112056);
+}
+*{
+  color: #ffffff;
+}
+/* Each section is full screen */
+.snap-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  padding: 2rem;
+  background: linear-gradient(135deg, #dbeafe,#1b10#0a112056);
+}
+
+/* Project card style */
+.project-card-scroll {
+  background: linear-gradient(135deg, #eeebeb, #1b10#0a112056);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgb(162, 181, 236);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card-scroll:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(234, 215, 215, 0.778);
+}
+
+/* Project image styling */
+.project-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgb(236, 227, 227);
+}
+
+/* Link styling */
+.project-card-scroll a {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #c2cbda;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card-scroll a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+.scroll-icon {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 12px;
+  color: #00b4d8;
+  animation: bounce 2s infinite;
+}
+.end-indicator {
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}

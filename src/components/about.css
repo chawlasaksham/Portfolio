@@ -1,0 +1,248 @@
+.about-section {
+  text-align: center;
+  margin-top: 100px;
+  padding: 100px 40px;
+  color: white;
+  background-color: #0a112056;
+  background: linear-gradient(135deg, #e5e7eb, #1b10#0a112056);
+  position: relative;
+  box-shadow: 0 8px 25px rgba(237, 227, 227, 0.25);
+}
+  
+/* Heading style */
+.about-heading {
+  color: #ecf1f2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Description under heading */
+.about-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+/* Title of subsections */
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Common box style */
+.my-reads,
+.hobbies,
+.tools {
+  /* background: linear-gradient(135deg, #6386bd,#1b10#0a112056); */
+  padding: 25px;
+  border-radius: 16px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 650px;
+  box-shadow: 0 10px 30px rgba(247, 241, 241, 0.598);
+}
+
+/* Single Box */
+.about-box {
+  /* background: linear-gradient(135deg, #e6e8ec, #c4c8d0); */
+  padding: 20px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(237, 227, 227, 0.25);
+}
+
+.box-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00d4ff;
+}
+
+.box-description {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+/* Tags for hobbies */
+.hobbies-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.hobbies-tags span {
+  /* background: linear-gradient(to right, #f0f7f8, #3a86ff); */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.hobbies-tags span:hover {
+  transform: scale(1.05);
+}
+
+/* Tools marquee section */
+.tools-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Marquee sliders */
+.tools-slider,
+.tools-sliderrev {
+  display: flex;
+  gap: 20px;
+  animation: moveIcons 12s linear infinite;
+  white-space: nowrap;
+}
+
+.tools-sliderrev {
+  animation: moveIconsreverse 12s linear infinite;
+}
+
+/* Spacer between icons */
+.spacer {
+  min-width: 20px;
+  content: "";
+}
+
+/* Individual icon box */
+.icon {
+  /* background: rgba(255, 255, 255, 0.08); */
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgb(255, 255, 255);
+  min-width: 120px;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Keyframes */
+@keyframes moveIcons {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveIconsreverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .my-reads,
+  .hobbies,
+  .tools {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hobbies-tags {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tools-slider,
+  .tools-sliderrev {
+    min-width: 200%;
+    animation-duration: 18s;
+  }
+}
+@media (max-width: 768px) {
+  /* General Padding */
+  .about-section {
+    padding: 24px 12px;
+  }
+
+  /* Section Titles */
+  .about-heading {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .about-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .box-title {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  /* Descriptions */
+  .about-description,
+  .box-description {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+    display: none;
+  }
+
+  /* Boxes */
+  .about-box {
+    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-box img {
+    width: 120px;
+    height: auto;
+    margin: 12px auto;
+    display: block;
+  }
+
+  /* Tools slider and tech stack */
+  .tools-slider,
+  .tools-sliderrev {
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* Optional: disable animation on mobile */
+  }
+
+  /* Button-like badges (e.g., Redux, Tailwind, GitHub) */
+  .tech-item {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}

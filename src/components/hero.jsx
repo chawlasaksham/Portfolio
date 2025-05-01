@@ -1,0 +1,24 @@
+import React from "react";
+import "./hero.css";
+
+const Hero = () => {
+  return (
+    <section className="hero" id="hero">
+      <div className="hero-content">
+        <img src="/avatar.jpg" alt="Avatar" className="avatar" />
+        <br />
+        <span className="status-badge">🟢 Available for new Projects</span>
+
+        <h1>SAKSHAM</h1>
+        <p>Hi, I'm a passionate MERN stack developer crafting seamless user experiences.</p>
+
+        <div className="hero-buttons">
+          <a href="/projects" className="hero-btn">Explore More ⬇</a>
+          <a href="/contact" className="connect-btn">👋 Let's Connect</a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
