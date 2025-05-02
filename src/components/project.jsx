@@ -28,14 +28,14 @@ const projects = [
     title: "SCHOOL MANAGEMENT API",
     description:
       "A Node.js-based REST API for managing student and teacher data using MySQL. Includes CRUD operations and tested endpoints using Postman.",
-    link: "https://github.com/yourusername/school-api",
+    link: "https://github.com/chawlasaksham/",
     image: "image.png",
   },
   {
     title: "PORTFOLIO",
     description:
       "A modern portfolio site built with React, Tailwind, and animation libraries.",
-    link: "https://yourportfolio.com",
+    link: "https://portfolio-hlyh.onrender.com/",
     image: "image.png",
   },
   {
