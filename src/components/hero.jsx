@@ -15,7 +15,8 @@ const Hero = () => {
 
         <div className="hero-buttons">
        <a href="/projects">Explore More ⬇</a>
-       <Link to="/contact" className="connect-btn">👋 Let's Connect</Link>
+       <a href="/contact">👋 Let's Connect </a>
+{/*        <Link to="/contact" className="connect-btn">👋 Let's Connect</Link> */}
         </div>
       </div>
     </section>
