@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,8 +14,8 @@ const Hero = () => {
         <p>Hi, I'm a passionate MERN stack developer crafting seamless user experiences.</p>
 
         <div className="hero-buttons">
-          <a href="https://portfolio-hlyh.onrender.com/projects" className="hero-btn">Explore More ⬇</a>
-          <a href="https://portfolio-hlyh.onrender.com/contact" className="connect-btn">👋 Let's Connect</a>
+        <Link to="/projects" className="hero-btn">Explore More ⬇</Link>
+        <Link to="/contact" className="connect-btn">👋 Let's Connect</Link>
         </div>
       </div>
     </section>
