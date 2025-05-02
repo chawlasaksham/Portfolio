@@ -59,7 +59,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 body {
-  background: url('galaxy.svg') no-repeat center center fixed;
+  background: url('./assets/galaxy.svg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
