@@ -14,8 +14,8 @@ const Hero = () => {
         <p>Hi, I'm a passionate MERN stack developer crafting seamless user experiences.</p>
 
         <div className="hero-buttons">
-        <Link to="/projects" className="hero-btn">Explore More ⬇</Link>
-        <Link to="/contact" className="connect-btn">👋 Let's Connect</Link>
+       <a href="/projects">Explore More ⬇</a>
+       <Link to="/contact" className="connect-btn">👋 Let's Connect</Link>
         </div>
       </div>
     </section>
