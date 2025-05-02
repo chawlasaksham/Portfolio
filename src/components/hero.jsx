@@ -13,8 +13,8 @@ const Hero = () => {
         <p>Hi, I'm a passionate MERN stack developer crafting seamless user experiences.</p>
 
         <div className="hero-buttons">
-          <a href="/projects" className="hero-btn">Explore More ⬇</a>
-          <a href="/contact" className="connect-btn">👋 Let's Connect</a>
+          <a href="https://portfolio-hlyh.onrender.com/projects" className="hero-btn">Explore More ⬇</a>
+          <a href="https://portfolio-hlyh.onrender.com/contact" className="connect-btn">👋 Let's Connect</a>
         </div>
       </div>
     </section>
