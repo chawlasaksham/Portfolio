@@ -1,0 +1,47 @@
+/* Tape Container */
+.tape-container {
+    width: 100vw;  /* Full viewport width */
+    overflow: hidden;
+    position: fixed; /* Stick to bottom of viewport */
+    bottom: 0;
+    left: 0;
+    transform: rotate(-3deg); /* Apply slight rotation */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Moving Tape */
+.tape {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Increased spacing */
+    white-space: nowrap;
+    font-size: 1.5rem; /* Slightly larger for emphasis */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background: linear-gradient(to right, #e8e9ef63,  #edeff456);
+    padding: 20px 0;
+    width: max-content; /* Ensure it expands properly */
+    animation: moveTape 10s linear infinite; /* Slower animation for smooth effect */
+}
+
+/* Duplicate content for seamless scrolling */
+.tape span {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* Animation */
+@keyframes moveTape {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Add space at the bottom so content doesn't get hidden by tape */
+.main-content {
+    padding-bottom: 80px; /* Adjust based on tape height */
+}
